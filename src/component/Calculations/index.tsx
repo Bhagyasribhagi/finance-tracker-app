@@ -5,23 +5,23 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { GrAmazon } from "react-icons/gr";
 
-interface StockData {
-  symbol: string;
-  name: string;
-  lastSale: string;
-  netChange: string;
-  pctChange: string;
-  marketCap: string;
-}
+// interface StockData {
+//   symbol: string;
+//   name: string;
+//   lastSale: string;
+//   netChange: string;
+//   pctChange: string;
+//   marketCap: string;
+// }
 
-interface CalculationsState {
-  stockData: StockData[];
-}
+// interface CalculationsState {
+//   stockData: StockData[];
+// }
 
-class Calculations extends Component<CalculationsState> {
-  state: CalculationsState = {
-    stockData: [],
-  };
+class Calculations extends Component {
+  // state: CalculationsState = {
+  //   stockData: [],
+  // };
 
   // componentDidMount() {
   //   this.fetchStockData();
