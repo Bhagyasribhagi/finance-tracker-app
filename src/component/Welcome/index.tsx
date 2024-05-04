@@ -3,12 +3,7 @@ import  { Component, ChangeEvent, FormEvent } from "react";
 import "./index.css";
 import { Navigate } from "react-router-dom";
 
-interface WelcomeProps {
-  Income: number;
-  Name: string;
-  Goal: string;
-  redirect: boolean;
-}
+
 
 interface WelcomeState {
   Income: number;
@@ -20,7 +15,7 @@ interface WelcomeState {
   goalError: string;
 }
 
-class Welcome extends Component<WelcomeProps, WelcomeState> {
+class Welcome extends Component {
   state: WelcomeState = {
     Income: 0,
     Name: "",
