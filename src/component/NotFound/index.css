@@ -1,0 +1,23 @@
+.cart-img{
+    width: 77px;
+height: 52.5px;
+top: 3.5px;
+left: 3.5px;
+gap: 0px;
+border: 4px 0px 0px 0px;
+opacity: 0px;
+
+
+}
+.not-found{
+    align-items: center;
+    text-align: center;
+}
+.span{
+    color: green;
+}
+@media (max-width: 600px) {
+    .not-found {
+        display: none;
+    }
+}

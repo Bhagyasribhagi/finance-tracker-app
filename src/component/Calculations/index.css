@@ -1,0 +1,59 @@
+.cal-opt-con{
+    display: flex;
+    gap: 10px;
+}
+.calculation-container{
+    background-color: aliceblue;
+    color: black;
+    padding: 15px;
+    font-size: 15px;
+}
+.optional-container{
+    background-color: aliceblue;
+    color: black;
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    .cal-opt-con {
+        display: flex;
+        flex-direction: column;
+    }
+    .available{
+        font-size: 15px;
+        width: 25vh;
+    }.btn{
+        width: 10vh;
+        color: yellow;
+    }
+}
+.avail-btn{
+    display: flex;
+    gap: 10px;
+    
+}
+.available{
+    background-color: black;
+    color: aliceblue;
+   
+  
+}
+.optional-cart{
+    padding: 10px;
+    background-color: bisque;
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn-select{
+    background-color: rgb(110, 210, 110);
+    color: black;
+    border-radius: 20px;
+
+}
+.goal{
+    text-align: center;
+}

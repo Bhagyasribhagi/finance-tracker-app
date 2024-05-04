@@ -1,0 +1,45 @@
+.navBar{
+    display: flex; 
+    flex-direction: row;  
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .expenses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .dollar-img{
+    height: 10vh;
+color: grey;
+   }
+   .expenases-name{
+    color: #FFE600;
+
+   }
+   .new-expanse-btn{
+    width: 248px;
+height: 38px;
+gap: 0px;
+opacity: 0px;
+align-items: center;
+background-color: #FFE600;
+
+
+   }
+   .btnn{
+    padding: 25px;
+   }
+   .profile{
+    width: 248px;
+height: 38px;
+   }
+   .heading{
+    font-size: 25px;
+
+   }
+   .data{
+    align-items: center;
+    padding-left: 10px;
+   }
