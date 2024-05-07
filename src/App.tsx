@@ -78,8 +78,8 @@ function App() {
     <BrowserRouter>
     <FinanceContext.Provider value={{income, setIncome, name, setName, goal, setGoal}}>
     <Routes>
-      <Route path="/welcome" element={<Welcome/>}/>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<Welcome/>}/>
+      <Route path="/welcome" element={<Home/>}/>
       <Route path="/edit" element={<Editoption descriptionData={descriptionList}/>}/>
     </Routes>
     </FinanceContext.Provider>
