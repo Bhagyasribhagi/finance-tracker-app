@@ -1,6 +1,6 @@
 .cart-img{
     width: 77px;
-height: 52.5px;
+height: 10vh;
 top: 3.5px;
 left: 3.5px;
 gap: 0px;
@@ -12,12 +12,14 @@ opacity: 0px;
 .not-found{
     align-items: center;
     text-align: center;
+    /* font-size: 15px; */
+    padding-top: 10px;
+   
+   
+}
+.data{
+    font-size: 30px;
 }
 .span{
     color: green;
-}
-@media (max-width: 600px) {
-    .not-found {
-        display: none;
-    }
 }

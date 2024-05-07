@@ -2,29 +2,19 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Overview
+Expense Tracking: Users can track their monthly or weekly expenses, categorizing each expenditure.
+Income Management: Allows users to input their income sources, aiding in budgeting and financial planning.
+Goal Setting: Users can set financial goals, whether it's saving for a vacation, paying off debt, or investing in a project.
+Visualization: Provides graphical representations of spending habits, income sources, and progress towards financial goals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies used
 
-## Expanding the ESLint configuration
+React JS
+TypeScript
+CSS
+useContext(Hooks)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Features
+Optionally, provide a comparison with previous months or weeks to highlight any significant changes in spending patterns.
+Savings Progress: If applicable, include a section showing progress towards savings goals, indicating how much has been saved or invested so far.

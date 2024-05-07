@@ -1,59 +1,192 @@
-.cal-opt-con{
+.calculation{
     display: flex;
     gap: 10px;
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   
 }
-.calculation-container{
+.cal-name{
+    text-align: center;
+    font-style: open sans;
+}
+.cal-container{
+    background-color: aliceblue;
+    padding: 15px;
+    color: black;
+
+}
+.btn2{
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.btn-select{
+    background-color: green;
+}
+.opt-container{
     background-color: aliceblue;
     color: black;
     padding: 15px;
-    font-size: 15px;
+    width: 100%;
 }
-.optional-container{
-    background-color: aliceblue;
-    color: black;
+.op-name{
+    text-align: center;
+}
+.income-cart{
+    background-color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.opt-cart{
+    background-color: rgb(231, 226, 195);
+    border-radius: 10px;
     padding: 15px;
-}
-@media (max-width: 600px) {
-    .cal-opt-con {
-        display: flex;
-        flex-direction: column;
-    }
-    .available{
-        font-size: 15px;
-        width: 25vh;
-    }.btn{
-        width: 10vh;
-        color: yellow;
-    }
-}
-.avail-btn{
-    display: flex;
-    gap: 10px;
+    width: 90%;
     
 }
-.available{
-    background-color: black;
-    color: aliceblue;
-   
-  
+.circle{
+    text-align: center;
+    padding-bottom: 50px;
 }
-.optional-cart{
-    padding: 10px;
-    background-color: bisque;
-    align-items: center;
+.choose{
+    text-align: center;
+    font-weight: bold;
+    font-style: open san;
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    
 }
-.btn-select{
-    background-color: rgb(110, 210, 110);
-    color: black;
-    border-radius: 20px;
+.img{
+   height: 5vh;
+   
+   
+}
+
+.goals{
+   font-style: open sans; 
+   text-align: center;
 
 }
-.goal{
+.goal-name{
+    font-weight: bold;
+    font-style: open sans; 
     text-align: center;
 }
+.available{
+    display: flex;
+    align-items: center;
+    color: rgb(243, 240, 240);
+    gap: 10px;
+    text-align: center;
+  
+}
+.avaal{
+    height: 6vh;
+    width: 10vw;
+    background-color: black;
+    
+    align-items: center;
+    padding: 10px;
+    border-radius: 3px;
+    font-style: open sans;
+
+    
+}
+.ava{
+    font-size: 10px;
+   
+}
+.span1{
+    color: #ffe600;
+}
+.button-avail{
+    background-color: #ffe600;
+    color: black;
+    width: 100%;
+}
+@media screen and (max-width:768px)  {
+    .opt-container{
+        width: 50%;
+        padding: 10px;
+        height: 80vh;
+    }
+    .circle{
+        font-size: 10px;
+    }
+    .circle-img{
+        font-size: 10px;
+    }
+    .cal-container{
+        width: 50%;
+        height: 80vh;
+        /* padding: 10px; */
+    }
+    .row{
+        font-size: 10px;
+       
+    }
+    .choose{
+        font-size: 15px;
+    }
+    .goal-name{
+        font-size: 10px;
+        padding-left: 10px;
+        padding-top: 0px;
+       text-align: center;
+       
+    }
+    .opt-cart{
+        width: 80%;
+    }
+    
+    .calculation{
+        padding: 15px;
+    }
+    .income-cart{
+        background-color: antiquewhite;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+}
+@media screen and (max-width:320px){
+    .calculation{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:320px){
+.cal-container{
+    width: 100%;
+    /* padding-right: 10px; */
+}
+.calculation{
+    background-color: black;
+}
+.opt-container{
+    width: 100%;
+    /* background-color: black; */
+}
+.button-avail{
+  width: 80%;
+    
+}
+.avaal{
+    width: 40%;
+}
+.circle{
+    font-size: 30px;
+}
+}
+
+
+
+  

@@ -1,11 +1,12 @@
 
-import  { Component, ChangeEvent, FormEvent } from "react";
+import  {  FormEvent, useContext, useState } from "react";
 import "./index.css";
-import { Navigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+import FinanceContext from "../../context/FinanceContext";
+//import {withRouter} from 'react-router-dom'
 
 
-
-interface WelcomeState {
+export interface WelcomeState  {
   Income: number;
   Name: string;
   Goal: string;
@@ -15,60 +16,40 @@ interface WelcomeState {
   goalError: string;
 }
 
-class Welcome extends Component {
-  state: WelcomeState = {
-    Income: 0,
-    Name: "",
-    Goal: "",
-    redirect: false,
-    incomeError: "",
-    nameError: "",
-    goalError: ""
-  };
+const Welcome = () => {
+  const {name, setName, income, setIncome, goal, setGoal} = useContext(FinanceContext)
+  const navigate = useNavigate()
+  const [nameErr, setNameErr] = useState<boolean>(true)
+  const [incomeErr, setIncomeErr] = useState<boolean>(true)
+  const [goalErr, setGoalErr] = useState<boolean>(true)
+  const [nameErrMsg, setNameErrMsg] = useState<string>("")
+  const [incomeErrMsg, setIncomeErrMsg] = useState<string>("")
+  const [goalErrMsg, setGoalErrMsg] = useState<string>("")
 
-  onSubmitForm = (e: FormEvent<HTMLFormElement>) => {
+
+  
+  const onSubmitForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (!this.state.Income) {
-      this.setState({ incomeError: "Please enter your income" });
-      return;
+    if (!income) {
+      setIncomeErr(true)
+    setIncomeErrMsg("Please enter your income");
+    
+     }
+    if (!name) {
+      setNameErr(true)
+      setNameErrMsg("Please enter your name");
     }
-    if (!this.state.Name) {
-      this.setState({ nameError: "Please enter your name" });
-      return;
+    if (!goal) {
+      setGoalErr(true)
+      setGoalErrMsg("Please enter your goal");
     }
-    if (!this.state.Goal) {
-      this.setState({ goalError: "Please enter your goal" });
-      return;
+    
+    if (name !== "" && goal !== "" && income !== "") {
+      navigate("/")
     }
-
-    // If all fields are filled, proceed with form submission
-    this.setState({ redirect: true });
   };
-
-  onChangeIncome = (e: ChangeEvent<HTMLInputElement>) => {
-    this.setState({ Income: parseInt(e.target.value) });
-    this.setState({ incomeError: "" }); 
-  };
-
-  onChangeName = (e: ChangeEvent<HTMLInputElement>) => {
-    this.setState({ Name: e.target.value });
-    this.setState({ nameError: "" }); 
-  };
-
-  onChangeGoal = (e: ChangeEvent<HTMLInputElement>) => {
-    this.setState({ Goal: e.target.value });
-    this.setState({ goalError: "" }); 
-  }
-
-  render() {
-    if (this.state.redirect) {
-      return <Navigate to="/" />;
-    }
-
-    const { Income, Name, Goal } = this.state;
-
-    return (
+ 
+  return  (
       <div className="bg-container">
         <div className="image-cart">
           <h1 className="cart-title">
@@ -76,7 +57,7 @@ class Welcome extends Component {
             <br />
             Spend Wiser ...
           </h1>
-          <div className="img">
+          <div className="imgele">
             <img
               src="https://res.cloudinary.com/dwc2npg5b/image/upload/v1714802706/home-Illustrator_twlsqr.svg"
               alt="img"
@@ -88,18 +69,20 @@ class Welcome extends Component {
           <h1 className="heading">
             Monthly <span className="budget">Budget</span>
           </h1>
-          <form className="forlEle" onSubmit={this.onSubmitForm}>
+          <form className="forlEle" onSubmit={onSubmitForm} >
             <div className="carts">
               <label className="income">Insert Your Income</label>
               <br />
               <input
                 type="text"
                 className="income-type"
-                value={Income}
-                onChange={this.onChangeIncome}
-              />
-              {this.state.incomeError && (
-               <span className="error">{this.state.incomeError}</span>
+                value={income}
+                onChange={(e) => setIncome(e.target.value)}
+              
+               
+              /><br/>
+              {incomeErr && (
+               <span className="error">{incomeErrMsg}</span>
               )}
             </div>
             <div className="carts">
@@ -108,11 +91,13 @@ class Welcome extends Component {
               <input
                 type="text"
                 className="income-type"
-                value={Name}
-                onChange={this.onChangeName}
-              />
-              {this.state.nameError && (
-                <span className="error">{this.state.nameError}</span>
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              
+             
+              /><br/>
+              {nameErr && (
+                <span className="error">{nameErrMsg}</span>
               )}
             </div>
             <div className="carts">
@@ -121,11 +106,13 @@ class Welcome extends Component {
               <input
                 type="text"
                 className="income-type"
-                value={Goal}
-                onChange={this.onChangeGoal}
-              />
-              {this.state.goalError && (
-                <span className="error">{this.state.goalError}</span>
+                value={goal}
+                onChange={(e) => setGoal(e.target.value)}
+                
+              
+              /><br/>
+              {goalErr && (
+                <span className="error">{goalErrMsg}</span>
               )}
             </div>
             <div className="btn-con">
@@ -136,8 +123,7 @@ class Welcome extends Component {
           </form>
         </div>
       </div>
-    );
-  }
+  )
 }
 
-export default Welcome;
+export default Welcome

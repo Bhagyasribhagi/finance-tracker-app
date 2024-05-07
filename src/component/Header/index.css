@@ -1,45 +1,112 @@
-.navBar{
-    display: flex; 
-    flex-direction: row;  
-    background-color:black;
-    justify-content: space-between;
-    align-items: center;
-   }
-   .expenses{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   }
-   .dollar-img{
-    height: 10vh;
-color: grey;
-   }
-   .expenases-name{
-    color: #FFE600;
+.navBar {
+  
+  display: flex;
+  flex-direction: row;
 
-   }
-   .new-expanse-btn{
-    width: 248px;
-height: 38px;
-gap: 0px;
-opacity: 0px;
-align-items: center;
-background-color: #FFE600;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-bg{
+    padding: 15px;
+  width: 100%;
+}
+.name-ale{
+      font-style: open sans;
+  font-weight: 100;
 
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.expenses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dollar-img {
+  font-size: 50px;
+  color: grey;
+}
+.expenases-name {
+  color: #ffe600;
+}
+.new-expanse-btn {
+    width: 20vw;
+  height: 38px;
+  gap: 0px;
+  color: black;
+  opacity: 0px;
+  align-items: center;
+  background-color: #ffe600;
+}
+.btnn {
+  padding: 25px;
+  gap: 5px;
 
-   }
-   .btnn{
-    padding: 25px;
-   }
-   .profile{
-    width: 248px;
-height: 38px;
-   }
-   .heading{
-    font-size: 25px;
+}
+.profile {
+  width: 23vw;
 
-   }
-   .data{
-    align-items: center;
+  
+
+}
+.heading2 {
+  font-size: 25px;
+}
+.data {
+  align-items: center;
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .heading2 {
+    font-size: 18px;
+  }
+  .profile {
+    display: none;
+  }
+  .name-ale{
+    display: visible;
+  }
+  .new-expanse-btn{
+    font-size: 10px;
+    font-weight: bold;
+    
+    
+  }
+  .navbar-bg{
+    padding: 0px;
     padding-left: 10px;
-   }
+  }
+  
+}
+@media screen and (min-width:767px) {
+    .name-ale{
+        display: none;
+        padding: 0px;
+    }
+    
+}
+@media screen and (max-width:320px){
+    .navbar-bg{
+        width: 100%;
+    }
+    .new-expanse-btn{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:320px){
+    .dollar-img{
+        font-size: 30px;
+    }
+    .left-nav{
+        display: flex;
+        justify-content: space-between;
+    }.data{
+
+       font-size: 50px;
+        padding-left: 50px;
+    }
+}
+

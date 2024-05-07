@@ -1,10 +1,15 @@
 .bg-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 .image-cart {
   background-color: antiquewhite;
   padding-left: 20px;
+  width: 50%;
+  height: 100vh;
+ 
 }
 .cart-title {
   color: black;
@@ -23,12 +28,13 @@
   width: 100%;
   
   background-size: cover;
+  
   gap: 0px;
   opacity: 0px;
   display: flex;
-    justify-content: end;
+justify-content: end;
 }
-.img{
+/* .imgele{
     width: 100%;
   
     background-size: cover;
@@ -36,14 +42,14 @@
     opacity: 0px;
     display: flex;
     justify-content: end;
-}
+} */
 /* details cart */
 .details-cart {
   background-color: #1e1e1e;
   width: 50%;
-  height: 55vh;
-  left: 703px;
-  padding: 196px 121px 155px 120px;
+  height: 100vh;
+ 
+  padding-top:121px ;
   gap: 0px;
   opacity: 0px;
   align-items: center;
@@ -55,40 +61,41 @@
 }
 .heading{
     width: Hug (446px)px;
-height: Hug (96px)px;
+
 padding: 7px 0px 7px 0px;
 gap: 8px;
 opacity: 0px;
 text-align: center;
+font-style: Open sans;
+font-size: 30px;
 
 
 }
 .forlEle{
-    width: 481px;
+    /* width: 481px;
 height: 341px;
 top: 147px;
 left: 3px;
 gap: 0px;
-opacity: 0px;
+opacity: 0px; */
+text-align: center;
+align-items: center;
 }
 .carts{
     padding: 10px;
 }
 .income{
     font-family: Open Sans;
-font-size: 29.99px;
+font-size: 15px;
 font-weight: 400;
 line-height: 40.84px;
 letter-spacing: 0.1em;
 text-align: left;
+color: grey;
+font-style: open sans;
 
 }
 .btn{
-    width: 452px;
-height: 52px;
-top: 580px;
-left: 17px;
-padding: 12px 118px 11px 119px;
 gap: 0px;
 border-radius: 4px 0px 0px 0px;
 opacity: 0px;
@@ -99,6 +106,8 @@ color: #1e1e1e;
 }
 .btn-con{
     padding-top: 15px;
+    
+
 }
 .error{
     color: red;
@@ -106,8 +115,29 @@ color: #1e1e1e;
 }
 
 /* Mobile veiw */
-@media (max-width: 600px) {
-    .image-cart {
+@media screen and (max-width:768px){
+    .heading{
+        font-size: 25px;
+    }
+    .bg-container{
+        width: 100%;
+    }
+    .image-cart{
         display: none;
     }
+    .forlEle{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 10px;
+          
+    }
+    .details-cart{
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+    }
+    
 }

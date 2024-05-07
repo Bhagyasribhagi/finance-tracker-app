@@ -6,9 +6,9 @@ const NotFound = () => {
       <h1 className="data">
         Looks Like You Haven't added any <span className="span">Expenses yet</span>
       </h1>
-
-      <p>
-        No Worries , just Hit the <span className="span">'Add'</span>Button
+<br/>
+      <p className="bin">
+        No Worries , just hit the <span className="span">'Add' </span>Button
         <br /> To Get Started
       </p>
     
