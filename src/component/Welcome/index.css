@@ -57,7 +57,7 @@ justify-content: end;
 
 }
 .budget{
-    color:green;
+    color:#51D289;
 }
 .heading{
     width: Hug (446px)px;
@@ -114,7 +114,7 @@ color: #1e1e1e;
     font-weight: bold;
 }
 
-/* Mobile veiw */
+/* tablet veiw */
 @media screen and (max-width:768px){
     .heading{
         font-size: 25px;

@@ -45,7 +45,7 @@ const Welcome = () => {
     }
     
     if (name !== "" && goal !== "" && income !== "") {
-      navigate("/welcome")
+      navigate("/")
     }
   };
  

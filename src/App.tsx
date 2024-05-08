@@ -2,21 +2,24 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import Editoption from './component/Editoption'
-import Home from './component/Home'
-import Welcome from './component/Welcome'
-import {Routes,Route, BrowserRouter} from 'react-router-dom'
-import FinanceContext from './context/FinanceContext'
-import { useState } from 'react'
+import Editoption from "./component/Editoption";
+import Home from "./component/Home";
+import Welcome from "./component/Welcome";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import FinanceContext from "./context/FinanceContext";
+import { useState } from "react";
+import LoginForm from "./component/LoginForm";
+
+import ProtectedRoute from "./component/ProtectedRoute";
 //import FinanceContext from './context/FinanceContext'
-export interface descriptionState{
-  id:string,
-  type:string,
-  month:string,
-  year:string,
-  imageUrl:string
+export interface descriptionState {
+  id: string;
+  type: string;
+  month: string;
+  year: string;
+  imageUrl: string;
 }
-const descriptionList : descriptionState[] = [
+const descriptionList: descriptionState[] = [
   {
     id: "1",
     type: "Debts",
@@ -68,27 +71,31 @@ const descriptionList : descriptionState[] = [
 ];
 
 function App() {
-  const [income, setIncome] = useState<string>("")
-  const [name, setName] = useState<string>("")
-  const [goal, setGoal] = useState<string>("")
-  
+  const [income, setIncome] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [goal, setGoal] = useState<string>("");
 
   return (
     <>
-    <BrowserRouter>
-    <FinanceContext.Provider value={{income, setIncome, name, setName, goal, setGoal}}>
-    <Routes>
-      <Route path="/" element={<Welcome/>}/>
-      <Route path="/welcome" element={<Home/>}/>
-      <Route path="/edit" element={<Editoption descriptionData={descriptionList}/>}/>
-    </Routes>
-    </FinanceContext.Provider>
-    </BrowserRouter>
-   
-     
-      
+      <BrowserRouter>
+        <FinanceContext.Provider
+          value={{ income, setIncome, name, setName, goal, setGoal }}
+        >
+          <Routes>
+            <Route path="/login" element={<LoginForm />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/welcome" element={<Welcome />} />
+              <Route
+                path="/edit"
+                element={<Editoption descriptionData={descriptionList} />}
+              />
+            </Route>
+          </Routes>
+        </FinanceContext.Provider>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

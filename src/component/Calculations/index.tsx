@@ -36,7 +36,7 @@ const Calculations = (props : OptionalProps) => {
               <h1 className="ava">
                SPENT
                 <br />
-                <span className="span1">$8,000,00</span>
+                <span className="span">$8,000,00</span>
               </h1>
             
             </div>
@@ -66,7 +66,7 @@ const Calculations = (props : OptionalProps) => {
               </div>
             ))}
           </div>
-          <hr className="line"/>
+          <hr className="line-hr"/>
           <h3 className="goals">Goals</h3>
           <h5 className="goal-name">
           {goal}

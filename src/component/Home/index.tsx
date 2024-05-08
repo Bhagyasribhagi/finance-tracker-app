@@ -4,7 +4,7 @@ import "./index.css";
 import NotFound from "../NotFound";
 import Calculations from "../Calculations";
 import Description from "../Description/index";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import FinanceContext from "../../context/FinanceContext";
 
@@ -14,41 +14,41 @@ export interface optionalState {
   ImgName: string;
 }
 
-export interface WelcomeState {
-  Income: number;
-  Name: string;
-  Goal: string;
-}
+// export interface WelcomeState {
+//   Income: number;
+//   Name: string;
+//   Goal: string;
+// }
 
 const optionalList = [
   {
     id: "3639dd44-a5d5-11ec-b909-0242ac120002",
     imgUrl:
-      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1714976126/image_cm7o0e.png",
+      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1715085430/logo_4_dgv4w5.png",
     ImgName: "NETFLIX",
   },
   {
     id: "3639e17c-a5d5-11ec-b909-0242ac120002",
     imgUrl:
-      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1714976154/image_1_enuakb.png",
+      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1715085379/logo_iisdql.png",
     ImgName: "SPOTIFY",
   },
   {
     id: "3639e37a-a5d5-11ec-b909-0242ac120002",
     imgUrl:
-      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1714976255/image_4_crontn.png",
+      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1715085423/logo_3_cv6qzs.png",
     ImgName: "AMAZON",
   },
   {
     id: "3639e532-a5d5-11ec-b909-0242ac120002",
     imgUrl:
-      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1714976175/image_2_mnl8s0.png",
+      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1715085396/logo_1_ejoyta.png",
     ImgName: "GOOGLE",
   },
   {
     id: "3639e8c0-a5d5-11ec-b909-0242ac120002",
     imgUrl:
-      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1714976210/image_3_ofuqn6.png",
+      "https://res.cloudinary.com/dwc2npg5b/image/upload/v1715085414/logo_2_cmf6h0.png",
     ImgName: "FACEBOOK",
   },
 ];
@@ -113,12 +113,12 @@ const descriptionList: descriptionState[] = [
 ];
 
 const Home: React.FC = () => {
-  const location=useLocation()
-  console.log(location.pathname)
-  const state=location.state
-  console.log("state",state)
-  const a = useContext(FinanceContext)
-  console.log("home", a)
+  // const location=useLocation()
+  // console.log(location.pathname)
+  // const state=location.state
+  // console.log("state",state)
+   const a = useContext(FinanceContext)
+   console.log("home", a)
 
   return(
     <div className="home-data">
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
               <button className="filter-button">
                 <p className="filter">Filter Expenses</p>
                 <select className="select">
-                  <option  >
+                  <option  value="all" selected>
                     All
                   </option>
                 </select>

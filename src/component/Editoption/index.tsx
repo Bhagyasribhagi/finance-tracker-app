@@ -8,13 +8,13 @@ interface DescriptionProps {
 
 class Editoption extends Component<DescriptionProps> {
   handleEdit = (index: number) => {
-    // Implement edit functionality here
+    
     console.log("Edit item at index", index);
-    // const selectedItem = this.props.descriptionData[index];
+    
   };
 
   handleDelete = (index: number) => {
-    // Implement delete functionality here
+   
     console.log("Delete item at index", index);
   };
 

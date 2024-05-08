@@ -3,10 +3,16 @@ import { RxAvatar } from "react-icons/rx";
 import "./index.css";
 import { useContext } from "react";
 import FinanceContext from "../../context/FinanceContext";
+import Cookies from 'js-cookie'
 
 const Header = () => {
   {
     console.log("hello");
+  }
+   const onLogout=()=>{
+    Cookies.remove("jwt_token")
+    window.location.replace("/login")
+    console.log("logout")
   }
 
   const {name} = useContext(FinanceContext)
@@ -33,6 +39,10 @@ const Header = () => {
           <button className="profile" type="button">
             {" "}
             <RxAvatar /> Welcome {name}
+          </button>
+          <button className="logout-btn" type="button" onClick={onLogout}>
+            {" "}
+           Logout
           </button>
         </div>
       </div>

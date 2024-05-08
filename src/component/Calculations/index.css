@@ -1,192 +1,270 @@
-.calculation{
-    display: flex;
-    gap: 10px;
-   width: 100%;
-   height: 100vh;
-   background-size: cover;
-   
+.calculation {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
-.cal-name{
-    text-align: center;
-    font-style: open sans;
+.cal-name {
+  text-align: center;
+  font-style: open sans;
+  font-family: Open Sans;
+  font-size: 29.99px;
+  font-weight: 400;
+  line-height: 40.84px;
+  text-align: center;
+  
 }
-.cal-container{
-    background-color: aliceblue;
-    padding: 15px;
-    color: black;
+.cal-container {
+  background-color: aliceblue;
+  padding: 15px;
+  color: black;
+}
+.money{
+    font-family: Open Sans;
+font-size: 29.99px;
+font-weight: 400;
+line-height: 40.84px;
+text-align: center;
+
 
 }
-.btn2{
-    padding-top: 20px;
+.btn2 {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.btn-select {
+  background-color: #51D289;
+}
+.opt-container {
+  background-color: aliceblue;
+  color: black;
+  padding: 15px;
+  width: 100%;
+}
+.op-name {
+ 
+  font-family: Open Sans;
+font-size: 29.99px;
+font-weight: 400;
+line-height: 40.84px;
+text-align: center;
+
+
+}
+.line-hr{
+    border-style: dotted;
+    
+}
+.income-cart {
+  background-color: antiquewhite;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.opt-cart {
+  background-color: rgb(231, 226, 195);
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+}
+.circle {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 10px;
+  
+}
+.choose {
+  text-align: center;
+  font-weight: bold;
+  font-style: open san;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Open Sans;
+font-size: 13px;
+
+line-height: 17.7px;
+letter-spacing: 0.09em;
+text-align: left;
+
+}
+.img {
+  height: 5vh;
+}
+.img-name{
+    font-family: Open Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 17.7px;
+letter-spacing: 0.09em;
+text-align: left;
+width: 62px;
+height: 18px;
+top: 18px;
+left: 63px;
+gap: 0px;
+opacity: 0px;
+
+
+}
+
+.goals {
+    font-family: Open Sans;
+    font-size: 29.99px;
+    font-weight: 400;
+    line-height: 40.84px;
+    text-align: left;
     text-align: center;
+    
+}
+.span{
+    font-family: Open Sans;
+font-size: 18.62px;
+font-weight: 400;
+line-height: 25.36px;
+text-align: center;
+padding-bottom: 5px;
+
+}
+.goal-name {
+  font-weight: bold;
+  font-style: open sans;
+  text-align: center;
+}
+.available {
+  display: flex;
+  align-items: center;
+  color: rgb(243, 240, 240);
+  gap: 10px;
+  text-align: center;
+}
+.avaal {
+  height: 6vh;
+  width: 10vw;
+  background-color: black;
+text-align: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  font-style: open sans;
+}
+.ava {
+  font-size: 10px;
+  font-family: Open Sans;
+font-size: 13px;
+font-weight: 700;
+line-height: 17.7px;
+letter-spacing: 0.09em;
+text-align: center;
+
+}
+.span1 {
+  color: #ffe600;
+}
+.button-avail {
+  background-color: #ffe600;
+  color: black;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .opt-container {
+    width: 50%;
+    padding: 10px;
+    height: 100vh;
+  }
+  .circle {
+    font-size: 10px;
+  }
+  .circle-img {
+    height: 15vh;
     width: 100%;
-}
-.btn-select{
-    background-color: green;
-}
-.opt-container{
-    background-color: aliceblue;
-    color: black;
+  }
+  .cal-container {
+    width: 50%;
+    height: 100vh;
+    padding: 10px;
+    /* padding: 10px; */
+  }
+  .row {
+    font-size: 10px;
+  }
+  .choose {
+    font-size: 15px;
+  }
+  .goal-name {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  .opt-cart {
+    width: 80%;
+  }
+
+  .calculation {
     padding: 15px;
-    width: 100%;
-}
-.op-name{
-    text-align: center;
-}
-.income-cart{
+  }
+  .income-cart {
     background-color: antiquewhite;
     align-items: center;
     text-align: center;
     border-radius: 15px;
     font-weight: bold;
-}
+  }
+  .avaal{
+    width: 40%;
 
-.opt-cart{
-    background-color: rgb(231, 226, 195);
-    border-radius: 10px;
-    padding: 15px;
-    width: 90%;
+  }
+}
+@media screen and (max-width: 487px) {
+  .calculation {
     
-}
-.circle{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.choose{
-    text-align: center;
-    font-weight: bold;
-    font-style: open san;
-}
-.row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.img{
-   height: 5vh;
-   
-   
-}
-
-.goals{
-   font-style: open sans; 
-   text-align: center;
-
-}
-.goal-name{
-    font-weight: bold;
-    font-style: open sans; 
-    text-align: center;
-}
-.available{
-    display: flex;
-    align-items: center;
-    color: rgb(243, 240, 240);
-    gap: 10px;
-    text-align: center;
-  
-}
-.avaal{
-    height: 6vh;
-    width: 10vw;
-    background-color: black;
-    
-    align-items: center;
-    padding: 10px;
-    border-radius: 3px;
-    font-style: open sans;
-
-    
-}
-.ava{
+    width: 80%;
+  }
+  /* .opt-container{
+    width: 50%;
+  } */
+  /* .opt-cart {
     font-size: 10px;
-   
-}
-.span1{
-    color: #ffe600;
-}
-.button-avail{
-    background-color: #ffe600;
-    color: black;
-    width: 100%;
-}
-@media screen and (max-width:768px)  {
-    .opt-container{
-        width: 50%;
-        padding: 10px;
-        height: 80vh;
-    }
-    .circle{
-        font-size: 10px;
-    }
-    .circle-img{
-        font-size: 10px;
-    }
-    .cal-container{
-        width: 50%;
-        height: 80vh;
-        /* padding: 10px; */
-    }
-    .row{
-        font-size: 10px;
-       
-    }
-    .choose{
-        font-size: 15px;
-    }
-    .goal-name{
-        font-size: 10px;
-        padding-left: 10px;
-        padding-top: 0px;
-       text-align: center;
-       
-    }
-    .opt-cart{
-        width: 80%;
-    }
-    
-    .calculation{
-        padding: 15px;
-    }
-    .income-cart{
-        background-color: antiquewhite;
-        align-items: center;
-        text-align: center;
-        border-radius: 15px;
-        font-weight: bold;
-    }
+    width: 80%;
+  } */
+  .img-name{
+    font-size: 8px;
+  }
+  .btn-select{
+    width: 20v;
+    font-size: 8px;
+  }
+
 
 }
-@media screen and (max-width:320px){
-    .calculation{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media screen and (max-width:320px){
-.cal-container{
+@media screen and (max-width: 320px) {
+  .cal-container {
     width: 100%;
     /* padding-right: 10px; */
-}
-.calculation{
+  }
+  .calculation {
     background-color: black;
-}
-.opt-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .opt-container {
     width: 100%;
     /* background-color: black; */
-}
-.button-avail{
-  width: 80%;
-    
-}
-.avaal{
+  }
+  .button-avail {
+    width: 80%;
+  }
+  .avaal {
     width: 40%;
-}
-.circle{
+  }
+  .circle {
     font-size: 30px;
+  }
 }
-}
-
-
-
-  

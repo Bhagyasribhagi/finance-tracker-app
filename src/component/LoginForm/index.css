@@ -1,0 +1,87 @@
+.login-bg{
+    text-align: center;
+   
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(16, 16, 16, 0.432);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form-submit{
+    align-items: center;
+    background-color: rgb(232, 197, 39);
+    width: 30%;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-style: open sans;
+    border-color: rgb(228, 15, 15);
+}
+.bgg{
+    text-align: center;
+    align-items: center;
+}
+.login-btn{
+    background-color: #ffe777;
+    border-color: #FFE600;
+    color: black;
+}
+.name-input{
+    background-color: rgb(27, 26, 26);
+    padding: 5px;
+    border-radius: 10px;
+}
+.login-heading{
+   padding-bottom: 20px;
+    color: #f9cc03;
+    font-weight: bold;
+}
+.errmsg{
+    color: red;
+    font-size: 10px;
+   font-style: italic;
+}
+.span2{
+    color: #51D289;
+}
+.show-pass{
+    display: flex;
+    width: 50%;
+    /* cursor: pointer; */
+}
+.show-password{
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .form-submit{
+        width: 50%;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .login-heading{
+        font-size: 25px;
+    }
+    .login-bg{
+        display: flex;
+        justify-content: center;
+    }
+    .name-input{
+        font-size: 18px;
+        font-weight: 100;
+        width: 70%;
+    }
+    .show-pass{
+        width: 60%;
+        font-size: 15px;
+    }
+}

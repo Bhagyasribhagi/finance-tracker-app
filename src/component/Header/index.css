@@ -32,7 +32,7 @@
   color: #ffe600;
 }
 .new-expanse-btn {
-    width: 20vw;
+    width: 10vw;
   height: 38px;
   gap: 0px;
   color: black;
@@ -41,12 +41,14 @@
   background-color: #ffe600;
 }
 .btnn {
-  padding: 25px;
+  padding-right: 5px;
   gap: 5px;
+  width: 50%;
 
 }
 .profile {
-  width: 23vw;
+  width: 30%;
+  font-size: 15px;
 
   
 
@@ -57,6 +59,10 @@
 .data {
   align-items: center;
   padding-left: 10px;
+}
+.logout-btn{
+  width: 30%;
+  background-color: red;
 }
 @media screen and (max-width: 768px) {
   .heading2 {
@@ -78,6 +84,20 @@
     padding: 0px;
     padding-left: 10px;
   }
+  .logout-btn{
+    width: 50%;
+    background-color: red;
+    font-size: 15px;
+  }
+  .new-expanse-btn {
+    width: 80%;
+  height: 38px;
+  gap: 0px;
+  color: black;
+  opacity: 0px;
+  align-items: center;
+  background-color: #ffe600;
+}
   
 }
 @media screen and (min-width:767px) {
@@ -85,14 +105,39 @@
         display: none;
         padding: 0px;
     }
+  }
+  @media screen and (max-width:1364px) {
+    .new-expanse-btn {
+      width: 30%;
+    height: 38px;
+    gap: 0px;
+    color: black;
+    opacity: 0px;
+    align-items: center;
+    background-color: #ffe600;
+  }
     
-}
+  }
+  @media screen and (min-width:778) and (max-width:908px) {
+    .new-expanse-btn{
+      width: 40%;
+    }
+    
+  }
+    
+    
+
 @media screen and (max-width:320px){
     .navbar-bg{
-        width: 100%;
+        width: 60%;
     }
     .new-expanse-btn{
         display: none;
+    }
+    .logout-btn{
+      width: 100%;
+      background-color: red;
+      font-size: 15px;
     }
     
 }
